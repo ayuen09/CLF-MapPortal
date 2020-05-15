@@ -1,68 +1,7 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1, maximum-scale=1,user-scalable=no"
-    />
-    <!--
-  ArcGIS API for JavaScript, https://js.arcgis.com
-  For more information about the widgets-layerlist sample, read the original sample description at developers.arcgis.com.
-  https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html
-  -->
-<title>LayerList widget - 4.14</title>
+<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style>
+<h1>WEB APP</h1>
 
-    <link
-      rel="stylesheet"
-      href="https://js.arcgis.com/4.14/esri/themes/light/main.css"
-    />
-
-    <style>
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-      }
-    </style>
-
-    <script src="https://js.arcgis.com/4.14/"></script>
-
-    <script>
-      require([
-        "esri/views/SceneView",
-        "esri/widgets/LayerList",
-        "esri/WebScene"
-      ], function(SceneView, LayerList, WebScene) {
-        var scene = new WebScene({
-          portalItem: {
-            // autocasts as new PortalItem()
-            // Need to change to the portal item
-            id: "adfad6ee6c6043238ea64e121bb6429a"
-          }
-        });
-
-        var view = new SceneView({
-          container: "viewDiv",
-          map: scene
-        });
-
-        view.when(function() {
-          var layerList = new LayerList({
-            view: view
-          });
-
-          // Add widget to the top right corner of the view
-          view.ui.add(layerList, "top-right");
-        });
-      });
-    </script>
-  </head>
-
-  <body class="calcite">
-    <div id="viewDiv"></div>
-  </body>
-</html>
+<div class="embed-container">
+    <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CLF_pp" 
+    src="//tuftsgis.maps.arcgis.com/apps/Embed/index.html?webmap=7440baa9cf094f68abfc7e37db83fe54&extent=-71.3049,42.1851,-70.5468,42.5134&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=dark"></iframe>
+</div>
